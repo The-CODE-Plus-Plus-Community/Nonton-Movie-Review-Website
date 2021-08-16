@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw; 
+    
+}
+
+/* sidenav */
+
+.nav{
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+    border-right: 1px solid #80808033;
+    width: 18vw;
+}
+.nav .title{
+    display: flex;
+    width: 50%;
+    height: 10px;
+    justify-content: left;
+    margin-right: 35px;
+    font-size: 1rem;
+    color: #808080;
+    
+    margin-bottom: 40px;
+}
+.nav .title .fa{
+    font-size: 1rem;
+    color: #808080;
+    margin-right: 5px;
+}
+.menu, .library, .category, .general{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    margin-left: 3vw;
+    font-weight: 450;
+    color: #808080;
+}
+.nav .head{
+    font-size: 1rem;
+    font-weight: 650;
+}
+.menu ul, .library ul, .category ul, .general ul{
+    margin-top: 20px;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.menu ul li, .library ul li, .category ul li, .general ul li{
+    width: 100%;
+    font-size: 0.9rem;
+    border-right: 4px solid transparent;
+    
+    padding-bottom: 8px;
+}
+.menu ul li i, .library ul li i, .category ul li i, .general ul li i{
+    margin-right: 7px;
+    color: #808080;
+}
+.menu ul li:hover, .library ul li:hover, .category ul li:hover, .general ul li:hover{
+    border-right: 3px solid red;
+}
+.menu ul li a, .library ul li a, .category ul li a, .general ul li a{
+    text-decoration: none;
+    color: #808080;
+}
+.menu ul li a:hover, .library ul li a:hover, .category ul li a:hover, .general ul li a:hover, .fas{
+    color: rgb(235, 16, 89);
+    font-weight: bold;
+}
+.menu{
+    height: 20vh;
+   
+}
+
+.menu ul{
+    height: 13vh;
+   
+}
+.library{
+    margin-top: 10px;
+    height: 15vh;
+}
+.library ul{
+    height: 11vh;
+    
+}
+.category{
+    margin-top: 5px;
+    height: 15vh;
+}
+.category ul{
+    height: 11vh;
+    
+}
+.general{
+    margin-top: 10px;
+    height: 15vh;
+}
+.general ul{
+    height: 7vh;
+    
+}
+.active{
+    color: red;
+}
+
+/* mid portion */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60vw;
+    border-right: 1px solid #80808033;
+    color: #adadad;
+}
+.content .genres{
+    width: 20vw;
+    margin-top: 10px;
+}
+.content .genres ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.content .genres ul a{
+    color: #808080;
+    text-decoration: none;
+}
+.content .genres ul a:hover{
+    color: #808080;
+    font-weight: bold;
+}
+.content .main-card{
+    height: 38vh;
+    width: 80%;
+    margin-left: 10%;
+    background-image: url('../super.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+.content .main-card .card-content{
+    
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    margin-top: 15vh;
+    padding: 5vh;
+    font-size: 0.8rem;
+}
+.content .main-card .card-content div{
+    margin-top: 5px;
+}
+.content .main-card .card-content div :nth-child(1){
+    padding: 10px 20px;
+    background-color: rgb(235, 16, 89);
+    color: whitesmoke;
+    
+}
+.content .main-card .card-content div :nth-child(2){
+    margin-left: 5px;
+    padding: 6px 15px 10px 15px;
+    background-color: rgba(128, 128, 128, 0.541);
+    font-size: 1.3rem;
+    color: honeydew;
+    border-radius: 10px;
+}
+.content .secondary-cards .top, .content .watching .top{
+    display: flex;
+    width: 85%;
+    margin-left: 4%;
+    justify-content: space-between;
+}
+.content .secondary-cards .top .icons{
+    font-size: 1.6em;
+    color: grey;
+    display: flex;
+    width: 10%;
+    justify-content: space-evenly;
+}
+.content .watching .top .icons{
+    font-size: 1.6em;
+    color: grey;
+    display: flex;
+    width: 10%;
+    justify-content: space-evenly;
+}
+.content .secondary-cards .cards{
+    display: flex;
+    width: 82%;
+    margin-left: 10%;
+    justify-content: space-evenly;
+}
+.content .secondary-cards .cards #cards{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 20%;
+    margin-top: 10px;
+    align-items: center;
+    padding-top: 20vh;
+    font-size: 0.8rem;
+}
+.content .secondary-cards .cards .card1{
+    background-image: url('../devil.jpg');
+    background-size: cover;
+}
+.content .secondary-cards .cards .card2{
+    background-image: url('../brawler.jpg');
+    background-size: cover;
+}
+.content .secondary-cards .cards .card3{
+    background-image: url('../vikings.jpg');
+    background-size: cover;
+}
+.content .secondary-cards .cards .card4{
+    background-image: url('../daredevil.jpg');
+    background-size: cover;
+}
+.content .secondary-cards .cards #cards {
+    padding: 14vh 2vh 2vh 2vh;
+}
+.content .watching .box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 96%;
+    margin-left: 2%;
+    font-size: 0.8rem;
+}
+.content .watching .box #box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12vh;
+    width: 25%;
+    height: 15vh;
+}
+.content .watching .box #box p{
+    display: inline-block;
+    background-size: inherit;
+}
+.content .watching .box .box1{
+    background: url('../cobra-kai.jpg');
+    background-size: cover;
+}
+.content .watching .box .box2{
+    background: url('../supernatural-s14.jpg');
+    background-size: cover;
+}
+.content .watching .box .box3{
+    background: url('../badlittlelies.jpg');
+    background-size: cover;
+}
+.content .watching .box .box1::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: relative;
+    top: 100%;
+    left: -75px;
+    
+}
+.content .watching .box .box2::before{
+    content: '';
+    width: 140px;
+    height: 2px;
+    position: relative;
+    top: 98%;
+    left: -40px;
+    
+}
+.content .watching .box .box3::before{
+    content: '';
+    width: 95%;
+    height: 2px;
+    position: relative;
+    top: 98%;
+    left: 0px;
+    
+}
+
+/* rightbar */
+
+.overview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+    height: 100vh;
+    color: #999999;
+}
+.overview .search-bar input{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: #e4e4e4;
+    color: rgb(170, 170, 170);
+    outline: none;
+    margin-top: 16px;
+    
+}
+.overview .popular, .overview .watchlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 45vh;
+}
+.overview .head{
+    font-weight: 700;
+}
+.overview .movies{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+    font-size: 0.7rem;
+}
+.overview .popular .movies .card{
+    display: flex;
+    width: 13vw;
+    justify-content: space-between;
+    height: 40%;
+
+}
+.overview .watchlist .movies .card{
+    display: flex;
+    width: 13vw;
+    justify-content: space-between;
+    height: 30%;
+}
+.overview .movies .card .image{
+    height: 100%;
+    width: 30%;
+    background-size: cover;
+
+}
+
+.overview .movies .card i{
+    font-size: 25px;
+    color: rgb(233, 177, 57);
+}
+.overview .popular .movies .card .cont{
+    display: flex;
+    height: 90%;
+    margin-right: 50px;
+    flex-direction: column;
+    
+}
+
+.overview .watchlist .movies .card .cont{
+    display: flex;
+    height: 90%;
+    margin-right: 30px;
+    flex-direction: column;
+    
+    
+}
+.overview .popular .movies .card .cont span{
+    font-size: 0.7rem;
+}
+
+.overview .popular .movies .card .image1{
+    background-image: url('../blade-runner.jpg');
+    background-size: cover;
+}
+.overview .popular .movies .card .image2{
+    background-image: url('../john-wick-2.jpg');
+    background-size: cover;
+}
+
+.overview .watchlist .movies .card .image4{
+    background:url('../stranger.png');
+    background-size: cover;
+}
+.overview .watchlist .movies .card .image5{
+    background:url('../deadpool.jpg');
+    background-size: cover;
+}
+.overview .watchlist .movies .card .image6{
+    background:url('../endgame.jpg');
+    background-size: cover;
+}
+.overview button{
+    width: 12vw;
+    height: 35px;
+    background-color: rgba(248, 205, 205, 0.89);
+    border: none;
+    color: rgb(235, 16, 89);
+    font-weight: bold;
+}
+.overview button:hover{
+    cursor: pointer;   
+}
+
+.stars{
+    height: 0.5px;
+    width: 0.5px;
+    display: flex;
+}
+
+.watch-now{
+    padding: 10px 15px;
+    background-color: rgb(235, 16, 89);
+    color: whitesmoke;
+    margin-top: 40px; 
+}
